@@ -1,8 +1,8 @@
 import viewportSize from "viewport-size";
 
-export const noOfColumn = 8;
+export const noOfColumn = 5;
 export const numberOfRow = 10;
-export const moveTime = 700;
+export const moveTime = 800;
 export const checkWordTime = 2000;
 
 

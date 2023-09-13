@@ -11,13 +11,14 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         justifyContent: 'center',
         alignItems: 'center',
-        margin: 0,
-        padding: 0,
-        borderRadius: 0,
+        margin: 2,
+        padding: 20,
+        borderRadius: 5,
         minWidth: 10,
-        minHeight: 10,
+        minHeight: 20,
         height: blockSize(),
         width: blockSize(),
+        backgroundColor: 'yellow',
     },
     buttonContent: {
         display: 'flex',
@@ -28,15 +29,17 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         justifyContent: 'center',
         alignItems: 'center',
+        overflow: 'auto',
+        wordWrap: 'break-word',
     },
     mainText: {
         fontFamily: "'Roboto', sans-serif",
-        color: '#ffffff',
-        fontSize: 20,
-        fontWeight: 600
+        color: 'black',
+        fontSize: 13,
+        fontWeight: 1000
     },
     subText: {
-        fontSize: 10
+        fontSize: 0
     }
 });
 
@@ -54,13 +57,13 @@ export default class Block extends Component {
     render() {
         const { letter, pos } = this.props;
 
-        let fillerStyle = { border: '1px solid black' }
+        let fillerStyle = { border: '2px solid black' }
         if (letter) {
             let _backgroundColor = letter.moving ? COLORS.MOVING : COLORS.NOTMOVING;
             if (letter.isWord) _backgroundColor = COLORS.POSSIBLE_WORD;
             fillerStyle = {
                 backgroundColor: _backgroundColor,
-                border: '1px solid white'
+                border: '2px solid white'
             }
         }
         return (

@@ -1,11 +1,18 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+<!-- Tetris gameplay 
+it is straightforward. 
+You'll be presented with a rectangular game board, and different shaped blocks (called tetrominos) will descend from the top of the screen. Your goal is to manipulate and set  these blocks to fit them neatly into rows at the bottom of the screen so that they can be arranged and make the given sentences the more you make meaningful sentence the more blocks will disappar and you will score points on the basis of that 
+. When you complete a row, it disappears, and you earn points.
 
-This is implementation of Tetris Game but using words. arrange letters and make english language words, once you have valid word, click on letter to score points.
 
-Game play video ==> https://youtu.be/qvoL5J-jsFA
+IMP.. The game continues until the stack of blocks reaches the top of the screen.
 
-This is a PWA. Play and Have fun.
 
-All suggestion and issues are welcome -:) 
+controllables 
+> right shift 
+>left shift
+>fast the block falling speed 
 
-Thank You!
+
+made for play and enjoy 
+
+Thank You! -->

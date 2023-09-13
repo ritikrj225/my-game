@@ -1,26 +1,29 @@
+// Define the phrases to be formed as per the questions
+const phrases = [
+    "We design and develop applications",
+    "that run the world and",
+    "showcase the future",
+  ];
+// Create an array of words based on the phrases 
+const words = phrases.join(' ').split(' ');
 
-// form Wiki => An analysis of entries in the Concise Oxford dictionary, ignoring frequency of word use, gives an order of 
-const allletters = "EARIOTNSLCUDPMHGBFYWKVXZJQ";
-
-
-
-export const lettersAdjustedPerWeight = () => {
-    // E appears most often in english dictionary, so will add e 26 times
-    // A appears more often after e in english dictionary, so will add A 25 times
-    // this way we will get good array of letters where probablity of finding most common letter will be higher.
-    let lettersArray = [];
-    Array.prototype.map.call(allletters, (_letter, index) => {
-        for (var i = 0; i < allletters.length - index; i++) lettersArray.push(_letter);
+ const wordsAdjustedPerWeight = () => {
+    let wordsArray = [];
+    words.forEach((word) => {
+      //it will return the words one by one from the above given array words which contains word of phrases
+      
+      wordsArray.push(word);
     });
-
-    return shuffle(lettersArray);
-}
-
-
-const shuffle = (a) => {
+  
+    return shuffle(wordsArray);
+  };
+  
+  const shuffle = (a) => {
     for (let i = a.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [a[i], a[j]] = [a[j], a[i]];
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
     }
     return a;
-}
+  };
+export default wordsAdjustedPerWeight;
+

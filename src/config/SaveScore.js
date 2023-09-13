@@ -1,5 +1,3 @@
-
-
 const HIGH_SCORE_KEY = "highScore";
 
 export const saveHighScore = (score) => {

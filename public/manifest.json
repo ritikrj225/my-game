@@ -14,8 +14,8 @@
     }
   ],
   "start_url": "/word-tetris/index.html",
-  "background_color": "#3367D6",
+  "background_color": "#3368D7",
   "display": "standalone",
   "scope": "/word-tetris/",
-  "theme_color": "#3367D6"
+  "theme_color": "#3367D9"
 }

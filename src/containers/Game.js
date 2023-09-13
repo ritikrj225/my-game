@@ -9,9 +9,10 @@ import DownIcon from '@material-ui/icons/ArrowDownward';
 
 import BlockColumn from './Column'
 import { noOfColumn, numberOfRow, moveTime, windowWidth, checkWordTime } from '../config/config'
-import { checkWord, sortWordQueue } from '../config/wordCheck';
+import { checkWord, sortWordQueue } from '../config/wordcheck';
 import { saveHighScore, getHighScore, scoreForThisWord } from '../config/SaveScore';
-import { lettersAdjustedPerWeight } from '../config/GenerateLetter';
+import wordsAdjustedPerWeight from '../config/GenerateLetter'; // Use the correct path
+
 import GameOver from './GameOver';
 import About from './About';
 
@@ -46,8 +47,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     score: {
-        margin: 5,
-        paddin: 5
+        margin: 10,
+        paddin: 10
     },
     controlContainer: {
         display: 'flex',
@@ -75,7 +76,7 @@ const GAMESTATE = {
     ENDED: 'ended',
 }
 
-const allletters = lettersAdjustedPerWeight();
+const allletters = wordsAdjustedPerWeight();
 
 class Game extends Component {
     nextLetter = undefined;
