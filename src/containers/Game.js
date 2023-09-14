@@ -9,7 +9,7 @@ import DownIcon from '@material-ui/icons/ArrowDownward';
 
 import BlockColumn from './Column'
 import { noOfColumn, numberOfRow, moveTime, windowWidth, checkWordTime } from '../config/config'
-import { checkWord, sortWordQueue } from '../config/wordcheck';
+import { checkWord, sortWordQueue } from '../config/wordCheck';
 import { saveHighScore, getHighScore, scoreForThisWord } from '../config/SaveScore';
 import wordsAdjustedPerWeight from '../config/GenerateLetter'; // Use the correct path
 
